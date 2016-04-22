@@ -1,0 +1,26 @@
+doctype html
+html(ng-app="matchmaker")
+  head
+    base(href="/")
+    title Heroes Matchmaker
+    link(href="css/style.css", rel="stylesheet")
+    link(href="lib/angular-material/angular-material.css", rel="stylesheet")
+    
+  body(style="background: url('images/swirl_pattern.png');")
+    block content
+    
+    script(src="/socket.io/socket.io.js")
+    
+    script(src="lib/angular/angular.js")
+    script(src="lib/angular-route/angular-route.js")
+    script(src="lib/angular-animate/angular-animate.js")
+    script(src="lib/angular-aria/angular-aria.js")
+    script(src="lib/angular-messages/angular-messages.js")
+    script(src="lib/angular-material/angular-material.js")
+    
+    // App Dependencies 
+    script(src="app.js")
+    script(src="controllers/chat.js")
+    script(src="services/socket.js")
+    script(src="services/socket-provider.js")
+    

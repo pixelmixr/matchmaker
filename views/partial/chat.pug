@@ -1,0 +1,13 @@
+div(layout="row", ng-cloak)
+    div(flex="20")
+    div(flex="60")
+        md-content.md-whiteframe-4dp
+            md-input-container.md-block
+                label Type a message...
+                input(type="text", ng-model="chatmsg")
+            md-button.md-raised.md-primary(ng-click="send(chatmsg)") Send
+            md-list
+                md-list-item.md-3-line(ng-repeat="msg in msgs")
+                    p {{ msg.text }}
+                    h4 {{ msg.timestamp | date: 'h:mma' }}
+    div(flex="20")
